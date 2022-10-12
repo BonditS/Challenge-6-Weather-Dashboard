@@ -7,5 +7,7 @@ let getWeather = function (city) {
     .then(function(response) {
         return response.json()
     })
-    .then(function(data))
+    .then(function(data){
+        
+    })
  }
