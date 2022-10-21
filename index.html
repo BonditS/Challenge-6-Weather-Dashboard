@@ -9,9 +9,41 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <div>
-        
-    </div>
+    <div class="container-fluid">
+        <!-- A fluid container that uses the full witdh -->
+        <div>
+            <nav class=""><h1>Weather Dashboard</h1></nav>
+        </div>
+    
+        <main>
+            <!-- search column -->
+            <div class="col-lg-4 ">
+                <form class="form-inline card-column">
+                    <label class="card-heade" for="search">Search for a City:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="city-name" placeholder="Enter City Name">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    
+                    <div>Recent Search</div>
+                    
+                    <div>
+                        <button>Clear Recent Search</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <section>
+                    <h1 class="city">City</h1>
+                    <ul class="current-status">current-status</ul>
+                </section>
+                <section>
+                    <h1>5-Day Forecast</h1>
+                </section>
+            </div>   
+        </main>
+      </div>
+      
+    
+
 </body>
-<script src="assests/script.js"></script>
+<script src="assets/script.js"></script>
 </html>

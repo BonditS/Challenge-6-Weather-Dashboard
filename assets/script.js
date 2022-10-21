@@ -1,13 +1,7 @@
 // fetch api
-let openWeatherUrl =''
-let getWeather = function (city) { 
-    //fetch request
-    fetch(openWeatherUrl)
-    // request current city and wait for response
-    .then(function(response) {
-        return response.json()
-    })
-    .then(function(data){
-        
-    })
- }
+
+let openWeatherApi =`http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=8186b94874b53d57d238ea86e82b51e2`
+
+fetch(openWeatherApi)
+.then(response => response.json())
+.then(data => console.log(data))
